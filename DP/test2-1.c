@@ -6,7 +6,8 @@
  ************************************************************************/
 
 #include<stdio.h>
-#define INT_MAX unsigned(-1)>>1
+#define INT_MAX unsigned(-1)>>1			//定义无穷大
+//求解矩阵链最优计算顺序，m存储值，s存储最优解
 void Matrix_chain_order(int p[], int n, int m[][7], int s[][7]){
 	int i,j,k,q;
 	for(i=1;i<=n;i++){
@@ -25,6 +26,7 @@ void Matrix_chain_order(int p[], int n, int m[][7], int s[][7]){
 		}
 	}
 }
+//打印最优解
 void Print_opimal(int s[][7], int i, int j){
 	if(i == j){
 		printf("A%d",i);
